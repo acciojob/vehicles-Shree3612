@@ -45,15 +45,9 @@ public class F1 extends Car {
         if (newSpeed > 0) {
             changeSpeed(newSpeed, getCurrentDirection());
         }
-
-//        if(newSpeed == 0) {
-//            //Stop the car, set gear as 1
-//            stop();
-//        }
-//        //for all other cases, change the gear accordingly
-//
-//        if(newSpeed > 0) {
-//            changeSpeed(newSpeed, getCurrentDirection());
-//        }
+    }
+    @Override
+    public int getCurrentGear() {
+        return super.getCurrentGear();
     }
 }
