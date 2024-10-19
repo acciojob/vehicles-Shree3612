@@ -7,7 +7,25 @@ public class Vehicle {
     private int currentDirection;
 
     public Vehicle(String name) {
+        this.name = name;
+        this.currentSpeed = 0;
+        this.currentDirection = 0;
+    }
 
+
+    // Getter for currentSpeed
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    // Getter for currentDirection
+    public int getCurrentDirection() {
+        return currentDirection;
+    }
+
+    // Method to set currentSpeed (if needed)
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
     }
 
     public void steer(int direction){
